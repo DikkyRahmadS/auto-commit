@@ -48,7 +48,7 @@ jobs:
           git commit -m "${arr[$rand]}"
 
       - name: GitHub Push
-        uses: ad-m/github-push-action@v0.6.2  # Perbarui versi jika ada
+        uses: ad-m/github-push-action@master
         with:
           directory: "."
           github_token: ${{ secrets.GITHUB_TOKEN }}
