@@ -6,7 +6,7 @@ on:
       - master
 
   schedule:
-    - cron: "0 7,9,17,19 * * 1-6"
+    - cron: "0 7,9,17,19,23 * * 1-6"
 
 jobs:
   auto_commit:
@@ -47,7 +47,7 @@ jobs:
 
           git commit -m "${arr[$rand]}"
 
-      - name: GitHub Push
+      - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           directory: "."
