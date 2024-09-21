@@ -6,7 +6,7 @@ on:
       - master
 
   schedule:
-    - cron: "0 7,9,11,14 * * 1-6"
+    - cron: "0 7,9,11,14,17 * * 1-6"
 
 jobs:
   auto_commit:
